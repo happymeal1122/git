@@ -18,7 +18,7 @@ def create_maze(width, height):
     grid = [[WALL for _ in range(width)] for _ in range(height)]
 
     # Start at a random cell
-    start_x, start_y = random.randint(0, width - 1), random.randint(0, height - 1)
+    start_x, start_y = (1, 1)
     grid[start_y][start_x] = PATH
 
     # Possible directions: up, down, left, right
@@ -48,6 +48,6 @@ def create_maze(width, height):
 
 # Example usage
 if __name__ == "__main__":
-    maze = create_maze(42, 22)
+    maze = create_maze(43, 13)
     for row in maze:
         print(''.join(['#' if cell else ' ' for cell in row]))
