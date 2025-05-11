@@ -1,3 +1,4 @@
+# git이 잘 실행되는지 보기 위한 테스트 주석
 import random
 
 def create_maze(width, height):
